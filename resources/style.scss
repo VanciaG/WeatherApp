@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+	font-named-instance: 'Regular';
+	src: url("./OpenSans-Regular.woff2") format("woff2");
+}
+
+*, 
+*::before, 
+*::after { 
+    box-sizing: border-box; 
+}
+
+html { 
+    background-size: cover; 
+    font-family: 'Open Sans',sans-serif; 
+    font-size: 16px; 
+    line-height: 1.5em; 
+    color: #fbffff;
+    background-color: #59575f; 
+    background-image: url(./background-image.webp);
+    background-blend-mode: multiply;
+    
+}
+
+body { 
+    display: block; 
+    min-height: 100vh; 
+    margin: 0; 
+    text-rendering: optimizeSpeed;
+   
+}
+
+img, picture { 
+    max-width: 100%; 
+    display: block; 
+}
+
+input, 
+button, 
+textarea, 
+select { 
+    font: inherit; 
+}
+
+strong { 
+    font-weight: 900; 
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #0000006e;
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    justify-content: center;
+    gap: 0.5rem;
+
+    @media (min-width: 450px){
+        padding: 0.6rem 1.6rem;
+        gap: 2rem;
+        
+    }   
+}
+
+.icon-weather {
+    margin-right: 0.6rem;
+    stroke: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+
+.search {
+    border: none;
+    display: flex;     
+}
+
+.search-input {
+    border-radius: 9px 0 0 9px;
+    outline: none;
+    color: white;
+    padding: 0 10px;
+    font-size: 1rem;
+    background-color: #2b2a33;
+    border: 1px solid hsla(0,0%,100%,.18);
+    height: 40px;
+    width: 100%;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.search-submit{
+    width: 60px;
+    height: 40px;
+    background-color: #2b2a33;
+    border-radius: 0 9px 9px 0;
+    border: 1px solid hsla(0,0%,100%,.18);
+    border-left: 0;
+    cursor: pointer;
+}
+
+.search-submit:hover {
+    background: #7c7c7c6b;
+}
+
+.icon-search {
+    width: 1.4rem;
+    height: 2rem;
+    stroke: #fff;
+}
+
+.section-weather {
+    font-family: sans-serif;
+    background: #0000006e;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    border: 1px solid hsla(0,0%,100%,.18);
+    width: 100%;
+    max-width: 460px;
+    margin: 1em;
+
+}
+
+.icon-description {
+    display: flex;
+    gap: 1rem;
+}
+
+
+h4 {
+    color: #c4c3c3;
+    margin-block: 0.6rem;
+}
+
+h1.temp {
+    font-size: 2rem;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+

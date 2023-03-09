@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <!-- setup -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Weather App</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/icon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="./resources/icon-16x16.png" />
+    <link href="./resources/style.css" rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-weather" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round" data-v-7b6d8b42=""><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 16a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-12"></path><line x1="5" y1="20" x2="19" y2="20"></line></svg>
+                <h1 class="title">Weather</h1>
+            </div>
+            <div class="search">
+                <input class="input search-input" placeholder="Search" type="search" maxlength="200" id="s" name="s">
+                <button class="submit-button search-submit" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-search" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round" data-v-1705e216=""><path stroke="none" d="M0 0h24v24H0z" fill="none" data-v-1705e216=""></path><circle cx="10" cy="10" r="7" data-v-1705e216=""></circle><line x1="21" y1="21" x2="15" y2="15" data-v-1705e216=""></line></svg>
+                </button>
+            </div>
+        </header>
+        <section class="section-weather">
+            <h2 class="city">Oras</h2>
+            <h1 class="temp">Temperatura</h1>
+            <div class="icon-description">
+                <img src="https://openweathermap.org/img/wn/04n.png" alt="weather-icon" class="icon">
+                <h3 class="description">Light Rain</h3>
+            </div> 
+            <div class="flex">
+                <img src="./resources/wind.png" class="flex-icon" width="16" height="16">
+                <h4 class="wind">Wind speed: </h4>
+            </div>
+            <div class="flex">
+                <img src="./resources/humidity.png" class="flex-icon" width="16" height="16">
+                <h4 class="humidity">Humidity: </h4>
+            </div>
+            <div class="flex">
+                <img src="./resources/pressure.png" class="flex-icon" width="16" height="16">
+                <h4 class="pressure">Pressure: </h4>
+            </div>
+        </section>
+    </div>   
+</body>
+</html>
