@@ -1,3 +1,3 @@
 # Weather App
 
-https://vanciag.github.io/WeatherApp/
+Weather app live here : https://vanciag.github.io/WeatherApp/
